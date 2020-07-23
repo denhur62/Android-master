@@ -363,3 +363,16 @@
 >
 >adapter.notifyDataSetChanged()를 별도로 호출해야 한다. 
 
+### 7.오류해결 및 추가지식
+
+>context는 버튼이면 버튼이 포함되어있는 주변정보(어떤 레이아웃에 포함되어있는가 )를 말함
+>u.i객체는 무조건 context 객체를 전달받게 되어있음
+>getApplicationContext()는 앱에서 사용하는 공통 context를 참조하는 매소드이다.
+>
+>코틀린에서 자바의 static final 처럼 쓰려고 하면 @jvmField를 사용하한다.
+>
+>https://github.com/kotlin-korea/Study-Log/issues/10
+>
+>
+>
+>
