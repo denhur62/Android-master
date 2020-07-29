@@ -36,13 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-
         adapter = new CustomerAdapter();
-
         adapter.addItem(new Customer("김준수", "1995-10-20", "010-1000-1000", R.drawable.customer));
         adapter.addItem(new Customer("이희연", "1994-02-13", "010-2000-2000", R.drawable.customer));
-
         recyclerView.setAdapter(adapter);
 
         adapter.setOnItemClickListener(new OnCustomerItemClickListener() {

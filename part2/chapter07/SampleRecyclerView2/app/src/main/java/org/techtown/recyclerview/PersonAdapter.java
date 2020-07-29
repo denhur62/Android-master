@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.ViewHolder>
-                            implements OnPersonItemClickListener {
+        implements OnPersonItemClickListener {
     ArrayList<Person> items = new ArrayList<Person>();
 
     OnPersonItemClickListener listener;
