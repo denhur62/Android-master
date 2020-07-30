@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 handler.post(new Runnable() {
                     public void run() {
                         textView.setText("value 값 : " + value);
+                        textView.setText("value 값 : " + value);
+                        textView.setText("value 값 : " + value);
+                        textView.setText("value 값 : " + value);
                     }
                 });
             }
