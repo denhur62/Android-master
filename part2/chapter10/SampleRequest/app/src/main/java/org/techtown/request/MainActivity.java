@@ -51,9 +51,7 @@ public class MainActivity extends AppCompatActivity {
     public void makeRequest() {
         String url = editText.getText().toString();
 
-        StringRequest request = new StringRequest(
-                Request.Method.GET,
-                url,
+        StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
