@@ -1,4 +1,4 @@
-# 안드로이드 
+# 💎안드로이드 
 
 ### 0.단축키 및 용어정리
 
@@ -14,9 +14,13 @@
 >
 >Alt+Space: 오류가 뜨는 곳에 마우스 커서를 대고 누르면 오류해결하기 위한 힌트 제공
 >
->Alt+Enter: 오류를 자동으로 고쳐주는 기능 주로 import함수를 불러올때 사용된다.
+>Alt+Enter: 오류를 자동으로 고쳐주는 기능 주로 import함수를 불러올때 사용된다. (퀵픽스)
 >
 >Ctrl+Tab: 스위처기능으로 윈도우의 화면 전환이랑 비슷
+>
+>Ctrl+B : 선언부 보기 
+>
+>Alt+Ctrl+i: 줄 간격 맞추기
 >
 >#### 디버깅은 빨간점(중단점) 생성 후  디버그 버튼 (Shift+F9) 실행
 >
@@ -369,10 +373,73 @@
 >u.i객체는 무조건 context 객체를 전달받게 되어있음
 >getApplicationContext()는 앱에서 사용하는 공통 context를 참조하는 매소드이다.
 >
->코틀린에서 자바의 static final 처럼 쓰려고 하면 @jvmField를 사용하한다.
+>코틀린에서 자바의 static final 처럼 쓰려고 하면 @jvmField를 사용한다.
 >
 >https://github.com/kotlin-korea/Study-Log/issues/10
 >
 >
 >
+>프래그먼트에서 sharedPreference를 사용하는 법
 >
+>```
+>SharedPreferences preferences = this.getActivity().getSharedPreferences("pref", Context.MODE_PRIVATE);
+>```
+>
+>바로 받아 오지 못하기 때문에 this.activity를 통해 받아옴
+>
+>
+>
+>뷰페이저 생명주기 및 뷰페이저의 정보 
+>
+>deprecated  된 자료는 많지만 이해하기 쉬움
+>
+>[https://itpangpang.xyz/category/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%28android%29/ViewPager](https://itpangpang.xyz/category/안드로이드(android)/ViewPager)
+>
+>
+>
+>뷰페이저에서 화면에 비춰졌을때 사용하는 FragmentStatePagerAdapter
+>
+>는 Deprecated되어 추후에 방법
+>
+>https://kimyounghoons.github.io/android/android-FragmentStatePagerAdapter/
+>
+>
+>
+>Cannot fit requested classes in a single dex file 오류해결방법
+>
+>![image-20200812214129584](image-20200812214129584.png)
+>
+>Dependency failing: com.google.android.gms:play-services-measurement-api:17.0.0 -> com.google.android.gms:play-services- measurement-sdk-api@[17.0.0], but play-services-measurement-sdk-api version was 17.1.0. 오류 해결방법
+>
+>https://happydev.kr/25
+>
+>->업데이트가 준비된 녹색배경 업그레이드 해주기
+>
+>이전에 실수로 apk를 등록했다면
+>
+>![image-20200813172418235](image-20200813172418235.png)
+>
+>를 통해 버젼 업그레이드를 해야한다.
+>
+>또한 admob을 통해 업로드 할때 Failed :0 비슷한 코드가 나왔는데 디벨로퍼에 있는 그대로 하였다면
+>
+>에드몹과 앱 연결, 혹은 애드몹과 파이어베이스 연결 유무를 확인하고 다시한번 샘플 ID인지 확인하고 그래들 버젼 확인 할 것.
+>
+>
+
+### 8.리사이클러뷰 ViewHolder에서 이미지 넣기 , onBindeViewHolder에서 넣기
+
+>#### ViewHolder
+>
+>![image-20200812170423344](images/image-20200812170423344.png)
+>
+>#### onBIndeViewHolder
+>
+>![image-20200812170449895](images/image-20200812170449895.png)
+>
+>
+>
+>
+
+
+
